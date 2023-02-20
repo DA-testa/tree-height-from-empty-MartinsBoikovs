@@ -6,6 +6,9 @@ import threading
 def compute_height(n, parents):
     # Write this function
     max_height = 0
+    
+    #rewrite from list to numpy array !!!, tests 21-25???
+
 
     par_split = parents.split()
     par_split = map(int, par_split)
