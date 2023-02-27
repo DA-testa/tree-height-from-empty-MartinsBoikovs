@@ -10,9 +10,10 @@ def compute_height(n, parents):
     #rewrite from list to numpy array !!!, tests 21-25???
 
 
-    par_split = parents.split()
-    par_split = map(int, par_split)
-    par_split = list(par_split)
+   par_split = parents.split()
+    #par_split = map(int, par_split)
+    #par_split = list(par_split)
+    par_split = np.array(list(map(int, par_split)))
     #print(par_split)
 
     for x in par_split:
