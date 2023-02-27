@@ -76,7 +76,7 @@ def main():
         num = input()
         text = input()
     
-    print(compute_height(int(num), list(maptext))
+    print(compute_height(int(num), list(maptext)))
 
 # In Python, the default limit on recursion depth is rather low,
 # so raise it here for this problem. Note that to take advantage
