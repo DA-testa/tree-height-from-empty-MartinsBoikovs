@@ -4,37 +4,14 @@ import sys
 import threading
 import numpy as np
 
-class Tree:
-    def __init__(self, n, parent):
-      self.n = n
-      self.parents = np.array([int(p) for p in parents.split()])
-      self.h = 0
+class Node:
+    def __init__(self, n):
+        self.n = n
+        self.children = []
+        self.height = None
 
 def compute_height(n, parents):
-    max_height = 0
-
-    for x in range(n-1):
-        current_h = 1
-        curr = parents[x]
-
-        storage = [curr]
-
-        while curr.parent != -1:
-            if curr.h > 0:
-                current_h = current_h + curr.h
-                break
-            storage.append(curr)
-            current_h += 1
-        for st in storage:
-            st.h = current_h
-            height -= 1
-
-    max_height = max([st.h for st in parents])
-    return max_height
-
-
-
-
+    
 
 
     #max_height = 0
